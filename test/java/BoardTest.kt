@@ -1,2 +1,4 @@
+package java
+
 class BoardTest {
 }
