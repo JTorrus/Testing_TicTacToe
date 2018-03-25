@@ -17,7 +17,7 @@ public class GameTest {
 
         for (int i = 0; i < boardUnderTest.getCells().length; i++) {
             for (int j = 0; j < boardUnderTest.getCells()[0].length; j++) {
-                boardUnderTest.getCells()[i][j] = new Cell(' ');
+                boardUnderTest.getCells()[i][j] = new Cell('?');
             }
         }
 
@@ -39,7 +39,7 @@ public class GameTest {
 
         for (int i = 0; i < boardUnderTest.getCells().length; i++) {
             for (int j = 0; j < boardUnderTest.getCells()[0].length; j++) {
-                boardUnderTest.getCells()[i][j] = new Cell(' ');
+                boardUnderTest.getCells()[i][j] = new Cell('?');
             }
         }
 
@@ -61,7 +61,7 @@ public class GameTest {
 
         for (int i = 0; i < boardUnderTest.getCells().length; i++) {
             for (int j = 0; j < boardUnderTest.getCells()[0].length; j++) {
-                boardUnderTest.getCells()[i][j] = new Cell(' ');
+                boardUnderTest.getCells()[i][j] = new Cell('?');
             }
         }
 
@@ -83,7 +83,7 @@ public class GameTest {
 
         for (int i = 0; i < boardUnderTest.getCells().length; i++) {
             for (int j = 0; j < boardUnderTest.getCells()[0].length; j++) {
-                boardUnderTest.getCells()[i][j] = new Cell(' ');
+                boardUnderTest.getCells()[i][j] = new Cell('?');
             }
         }
 
