@@ -41,4 +41,21 @@ public class BoardTest {
 
         Assert.assertFalse(boardUnderTest.checkIfACellIsEmpty(positionUnderTest));
     }
+
+    @Test
+    public void aPlayerPuttingAChipIntoAnEmptyCellWorks() {
+        Position positionUnderTest = mock(Position.class);
+        when(positionUnderTest.getPosX()).thenReturn(1);
+        when(positionUnderTest.getPosY()).thenReturn(2);
+
+        Board boardUnderTest = new Board();
+
+        for (int i = 0; i < boardUnderTest.getCells().length; i++) {
+            for (int j = 0; j < boardUnderTest.getCells()[0].length; j++) {
+                boardUnderTest.getCells()[i][j] = new Cell(' ');
+            }
+        }
+
+        Assert.assertTrue(boardUnderTest.makePlay(positionUnderTest));
+    }
 }

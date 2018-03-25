@@ -9,9 +9,14 @@ public class Board {
         game = new Game();
     }
 
-    public void makePlay(Position position) {
-        char currentChip = game.giveChip(0);
-        cells[position.getPosX()][position.getPosY()].setChip(currentChip);
+    public boolean makePlay(Position position) {
+        if (checkIfACellIsEmpty(position)) {
+            char currentChip = game.giveChip(0);
+            cells[position.getPosX()][position.getPosY()].setChip(currentChip);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public Cell[][] getCells() {
